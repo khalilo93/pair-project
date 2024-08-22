@@ -25,3 +25,41 @@ img{
   padding: 5px;
   width: 150px;
 }
+p{
+  color: blue;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-style: italic;
+  
+}
+body{
+  background-color: rgb(148, 216, 168);
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgba(31, 100, 40, 0.849);
+  border-radius: 4px;
+}
+button{
+  width: 100%;
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+h1{
+  text-align: center;
+  color: red;
+}
+.all{
+  padding: 10px;
+  margin: 20px;
+  background-color: bisque;
+}
