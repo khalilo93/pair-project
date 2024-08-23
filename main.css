@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
@@ -7,138 +7,106 @@ body {
 
 h1 {
   text-align: center;
-  margin: 20px 0;
+  margin-top: 20px;
   color: #333;
 }
 
-/* Form styling */
-#form {
-  display: none;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-}
-
-#form input {
-  width: calc(100% - 22px);
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #872424;
-  border-radius: 4px;
-}
-
-#form button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-#form button:hover {
-  background-color: #0056b3;
-}
-
-/* Top navigation styling */
 .topnav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #333;
   padding: 10px;
-  margin-bottom: 20px;
 }
 
-.topnav p, .topnav button, .topnav .text {
-  margin: 0 10px;
-  color: rgb(142, 39, 39);
-  font-size: 16px;
+.topnav p.add {
+  color: #fff;
   cursor: pointer;
+  font-weight: bold;
 }
 
-.topnav .text {
+.topnav input.text {
   width: 200px;
   padding: 5px;
-  border-radius: 4px;
+  border-radius: 5px;
   border: none;
-  outline: none;
 }
 
-.topnav button {
-  background-color: #007bff;
-  padding: 10px;
-  border-radius: 4px;
+
+button {
+  background-color: #4CAF50; 
   border: none;
-  transition: background-color 0.3s;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s, transform 0.3s; 
 }
 
-.topnav button:hover {
-  background-color: #0056b3;
+button:hover {
+  background-color: #45a049; 
+  transform: scale(1.05); 
 }
 
-/* Car display styling */ */
-#car {
 
+form#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #fff;
   padding: 20px;
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+form#form input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form#form button#addbutton {
+  width: 50%;
+}
+
 
 #all {
-
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 20px;
 }
 
-.all:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+.car {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  width: 250px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s;
 }
 
-.all img {
+.car:hover {
+  transform: scale(1.05); 
+}
+
+.car img {
   max-width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 
-.all button {
-  background-color: #dc3545;
-  color: white;
-  padding: 10px;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+
+.car {
+  animation: fadeIn 0.8s ease-in-out;
 }
-
-.all button:hover {
-  background-color: #c82333;
-}
-
-
-
-  .topnav {
-      flex-direction: column;
-  }
-
-  .topnav p, .topnav button, .topnav .text {
-      margin: 10px 0;
-  }
-
-  .car{
-    width: 300px;
-    margin: 20px;
-    padding: 15px;
-    background-color: #757272;
-  }
