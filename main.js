@@ -25,6 +25,7 @@ function MakeCar() {
     add: add,
     display: display,
     remove: remove,
+    
   };
 }
 var add = function () {
@@ -60,11 +61,12 @@ var p = $("#price");
 var d = $("#releasedate");
 var v = $("#vitesse");
 var im = $("#image");
+var f= $('#find')
 
 var remove = function (id) {
   this.list.splice(id, 1);
   var o = this.list;
-  console.log(o);
+  
 
   localStorage.setItem("this.list", JSON.stringify(o));
   this.display();
@@ -77,7 +79,15 @@ function show() {
 $("#add").on("click", function (event) {
   event.preventDefault();
   karhba.add();
+  $("#form").hide();
+    cat.val("");
+    p.val("");
+    d.val("");
+    im.val("");
+    v.val("");
+  
 });
 
 var karhba = MakeCar();
 karhba.display();
+
